@@ -1,0 +1,22 @@
+
+        <h1>Brooklyn Baked Goods Collective</h1>
+        <h2>Muffins for days!</h2>
+        <div class="row">
+        <% @muffins.to_a.each do |elem| %>
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="<%= elem.image %>">
+                        <span class="card-title"></span>
+                    </div>
+                    <div class="card-content">
+                        <p><%= elem.description %></p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">"<%= elem.price %>"</a>
+                    </div>
+                </div>
+            </div>
+        <% end %>
+    </div>        
+        

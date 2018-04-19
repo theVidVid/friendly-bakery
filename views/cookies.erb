@@ -1,0 +1,25 @@
+            
+
+
+        <h1>Brooklyn Baked Goods Collective</h1>
+        <h2>We offer some of the finest homestyle baked cookies this side of the river.</h2>
+            <div class="row">
+                <% @cookies.to_a.each do |elem| %>
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="<%= elem.image %>">
+                                <span class="card-title"></span>
+                            </div>
+                            <div class="card-content">
+                                <p><%= elem.description %></p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">"<%= elem.price %>"</a>
+                            </div>
+                        </div>
+                    </div>
+                <% end %>
+            </div>
+            
+        

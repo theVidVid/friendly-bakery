@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+        <title>Brooklyn Baked Goods Collective</title>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center">Brooklyn Baked Goods Collective</a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="/#{:index}">Home</a></li>
+                    <li><a href="cakes#{:cakes}">Cakes</a></li>
+                    <li><a href="cookies#{:cookies}">Cookies</a></li>
+                    <li><a href="muffins#{:muffins}">Muffins</a></li>
+                </ul>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="contact#{:contact}">Contact<i class="material-icons right">send</i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="logo"><img src="logo.jpg" border="0" class="responsive-image" alt="logo"></div>
+                
+        <%= yield %>
+
+        <footer class="page-footer">
+        <div class="container">
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2018 Copyright Brooklyn Baked Goods Collective. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+</body>
+</html>
+    

@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+    background-color: #A4B4D0;
+}
+#logo {
+    position: relative;
+    margin-left: 44%;    
+    height: auto;
+    width: 12%;
+    opacity: 0.6;
+}
+#homepage-image {
+    position: flex;
+    justify-content: center
+}    
+#contact {
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-left: 33%;
+}
+#contact-button {
+    margin-right: 55%
+}
+.responsive-image {
+    height: auto;
+    width: 75%;
+  }
