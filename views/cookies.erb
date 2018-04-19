@@ -1,12 +1,9 @@
-            
-
-
-        
+                    
         <hr><h4>We offer some of the finest homestyle baked cookies this side of the river.</h4><hr>
             <div class="row">
                 <% @cookies.to_a.each do |elem| %>
                     <div class="col s12 m6 l4">
-                        <div class="card">
+                        <div class="card large">
                             <div class="card-image">
                                 <img src="<%= elem.image %>">
                                 <span class="card-title"></span>
