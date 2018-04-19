@@ -46,7 +46,7 @@ post "/contact" do
     from = Name.new(name: @name)
     to = Email.new(email: 'ianjvidaurre@gmail.com')
     subject = 'Thank you for signing up for our email list.'
-    content = Content.new(type: 'text/plain', value: @opinion)
+    content = Content.new(type: 'text/plain', value: @catalog)
     mail = Mail.new(from, subject, to, content)
   
     sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
