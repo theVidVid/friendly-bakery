@@ -12,9 +12,6 @@ body {
 #homepage-image {
     position: flex;
     justify-content: center
-}
-#gallery {
-    border-radius: 25%;
 }    
 #contact {
     margin: 0 auto;
@@ -22,7 +19,7 @@ body {
     margin-left: 33%;
 }
 #contact-button {
-    margin-right: 55%
+    margin: 0 auto;
 }
 .responsive-image {
     height: auto;

@@ -1,0 +1,63 @@
+<h1>Brooklyn Baked Goods Collective Catalog of items</h1>
+
+<h3>Thank you subscibing to our email list! Below is a list of our current selection of baked goods.</h3>
+
+<h4>Cakes</h4>
+<div class="row">
+<% @cakes.to_a.each do |elem| %>
+    <div class="col s12 m6 l4">
+        <div class="card large">
+            <div class="card-image">
+                <img src="<%= elem.image %>">
+                <span class="card-title"></span>
+            </div>
+            <div class="card-content">
+                <p><%= elem.description %></p>
+            </div>
+            <div class="card-action">
+                <a href="#">"<%= elem.price %>"</a>
+            </div>
+        </div>
+    </div>
+<% end %>
+</div> 
+
+<h4>Cookies</h4>
+<div class="row">
+<% @cookies.to_a.each do |elem| %>
+    <div class="col s12 m6 l4">
+        <div class="card large">
+            <div class="card-image">
+                <img src="<%= elem.image %>">
+                <span class="card-title"></span>
+            </div>
+            <div class="card-content">
+                <p><%= elem.description %></p>
+            </div>
+            <div class="card-action">
+                <a href="#">"<%= elem.price %>"</a>
+            </div>
+        </div>
+    </div>
+<% end %>
+</div>
+
+<h4>Muffins</h4>
+<div class="row">
+<% @muffins.to_a.each do |elem| %>
+    <div class="col s12 m6 l4">
+        <div class="card large">
+            <div class="card-image">
+                <img src="<%= elem.image %>">
+                <span class="card-title"></span>
+            </div>
+            <div class="card-content">
+                <p><%= elem.description %></p>
+            </div>
+            <div class="card-action">
+                <a href="#">"<%= elem.price %>"</a>
+            </div>
+        </div>
+    </div>
+<% end %>
+</div>
