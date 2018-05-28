@@ -25,3 +25,8 @@ body {
     height: auto;
     width: 75%;
   }
+.container {
+    height: auto;
+    width: 250px;
+    text-align: center;
+}
